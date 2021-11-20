@@ -132,9 +132,9 @@ const Contact = () => {
                     <Col md={10} xs={10}>
                       <h3 className="text-white">Our Address</h3>
                       <p className="lh-base">
-                        #483, 1st Floor, Shop #1, 8th Main,
-                        <br /> 10th Cross, Jeevan Bhima Nagar, <br />
-                        HAL 3rd Stage, Bangalore -560 075
+                        10/199 Shivanahalli, Jakkur Main Road,
+                        <br /> Yelahanka, Bengaluru-560064.
+                        
                       </p>
                     </Col>
                   </Row>
@@ -165,7 +165,8 @@ const Contact = () => {
                     <Col md={10} xs={10}>
                       <h3 className="text-white">Contact</h3>
                       <p className="lh-base">
-                        Phone: +91 80108 79463 <br /> Phone: +91 80108 79463
+                        <strong> Phone: </strong>+91 96062 89999 <br />
+                        <strong>E-Mail: </strong> grademaxconcrete@gmail.com
                       </p>
                     </Col>
                   </Row>

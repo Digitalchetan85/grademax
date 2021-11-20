@@ -27,7 +27,10 @@ const TopMenuBar = () => {
                 <Nav.Link as={Link} to="/about">
                   ABOUT US
                 </Nav.Link>
-                <NavDropdown title="PRODUCTS" id="services">
+                <Nav.Link as={Link} to="/products">
+                  PRODUCTS
+                </Nav.Link>
+                {/* <NavDropdown title="PRODUCTS" id="services">
                   <NavDropdown.Item as={Link} to="/interior-design">
                     MENU-1
                   </NavDropdown.Item>
@@ -35,7 +38,7 @@ const TopMenuBar = () => {
                   <NavDropdown.Item as={Link} to="/constructions">
                     MENU-2
                   </NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 <Nav.Link as={Link} to="/gallery">
                   GALLERY
                 </Nav.Link>

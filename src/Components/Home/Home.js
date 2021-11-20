@@ -1,11 +1,38 @@
 import React from "react";
-import { Col, Container, Image, Button } from "react-bootstrap";
+import { Col, Container, Image, Button, Card } from "react-bootstrap";
 import MainSlider from "./../Includes/MainSlider";
 import { Row } from "react-bootstrap";
-import image from "../../Images/Gallery/image-1.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import ServiceImage from "../../Images/Gallery/image-1.png";
+import AboutImage from "../../Images/Gallery/image-1.png";
 
 const Home = () => {
+  const ServiceData = [
+    {
+      id: 1,
+      title: "Concrete",
+      imgURL: ServiceImage,
+      alt: "Concrete",
+      description: "content",
+      bntURL: "/services",
+    },
+    {
+      id: 2,
+      title: "Concrete",
+      imgURL: ServiceImage,
+      alt: "Concrete",
+      description: "content",
+      bntURL: "/services",
+    },
+    {
+      id: 3,
+      title: "Concrete",
+      imgURL: ServiceImage,
+      alt: "Concrete",
+      description: "content",
+      bntURL: "/services",
+    },
+  ];
   return (
     <div>
       <MainSlider />
@@ -32,12 +59,73 @@ const Home = () => {
                   first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
                   comes from a line in section 1.10.32.
                 </p>
-                <Button className="btn btn-primary text-white" as={Link} to="/about">Read more</Button>
+                <Button
+                  className="btn btn-primary text-white"
+                  as={Link}
+                  to="/about"
+                >
+                  Read more
+                </Button>
               </div>
             </Col>
             <Col md={6} className="align-self-center">
               <div className="text-center">
-                <Image src={image} alt="about" className="img-fluid" />
+                <Image src={AboutImage} alt="about" className="img-fluid" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
+      <div id="services" className="pt-3 pb-3 pt-md-5 pb-md-5  bg-light">
+        <Container>
+        <h2 className="pt-2 pb-2 text-center text-white">Services</h2>
+          <Row>
+            {ServiceData.map((item) => (
+              <Col md={4} key={item.id}>
+                <Card className="m-1 text-center shadow">
+                  <Card.Img
+                    variant="top"
+                    src={item.imgURL}
+                    alt={item.alt}
+                    className="img-fluid"
+                  />
+                  <Card.Body>
+                    <Card.Title>{item.title}</Card.Title>
+                    <Card.Text>{item.description}</Card.Text>
+                    <Button variant="primary" className="text-white" as={Link} to={item.bntURL}>
+                      Read More
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </div>
+
+      <div id="home-gallery" className="pt-3 pb-3 pt-md-5 pb-md-5">
+        <Container>
+          <h2 className="pt-2 pb-2 text-center text-primary">Gallery</h2>
+          <Row>
+            <Col md={3}>
+              <div className="text-center">
+                <Image src={AboutImage} alt="" className="img-fluid"/>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="text-center">
+                <Image src={AboutImage} alt="" className="img-fluid"/>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="text-center">
+                <Image src={AboutImage} alt="" className="img-fluid"/>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="text-center">
+                <Image src={AboutImage} alt="" className="img-fluid"/>
               </div>
             </Col>
           </Row>

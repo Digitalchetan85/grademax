@@ -15,7 +15,7 @@ const Gallery = () => {
     { id: 6, imgName: Image3, alt: "", tag: "Interior-design" },
   ];
 
-  const [tag, setTag] = useState("one");
+  const [tag, setTag] = useState("all");
   const [filteredImages, setFilteredImages] = useState([]);
 
   useEffect(() => {
