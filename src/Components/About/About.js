@@ -24,13 +24,13 @@ const About = () => {
                 {/* AT CREATIVE INTERIORS */}
               </h3>
               <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              Our Ready-mix concrete is confided in alike by extensive engineers, little temporary workers, Manufacturers, Draftsmen, small Contractors, Builders, Government organizations, and individual house developers. Who are building their first dream home. There are three reasons why our own is the most favoured Ready-mix concrete in India.
               </p>
               <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              Consistent nature of cement created in mechanized grouping plants; under high stringent quality conditions. On-time conveyance.  Wide scope of imaginative esteem added items to enable clients to spare time and cash. Ready Mix Concrete Manufacturers, and dealers.
               </p>
               <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              We provide the Ready mix with reasonable price and with best quality. We are using ULTRA TECH, and BIRLA, OPC 53 cement. We are mixing concrete with ULTRATECH OPC 53 grade cement. 
               </p>
             </Col>
             <Col md={4} className="align-self-center">
@@ -43,7 +43,7 @@ const About = () => {
           </Row>
         </Container>
       </div>
-      <div className="pt-3 pb-3 pt-md-5 pb-md-5 bg-light">
+      {/* <div className="pt-3 pb-3 pt-md-5 pb-md-5 bg-light">
         <Container>
           <Row className="justify-content-center">
             <Col md={6}>
@@ -72,7 +72,7 @@ const About = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
       {/* <div className="pt-3 pb-3 pt-md-5 pb-md-5">
         <Container>
           <h2 className="text-center text-secondary pt-2 pb-2">Our Team</h2>

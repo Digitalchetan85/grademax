@@ -16,7 +16,8 @@ const Footer = () => {
                 <Image src={FooterLogo} alt="" className="img-fluid" />
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={6}></Col>
+            <Col md={3} className="float-end">
               <div className="">
                 <h2 className="pt-2 pb-2">Quick Links</h2>
                 <ul>
@@ -38,45 +39,13 @@ const Footer = () => {
                 </ul>
               </div>
             </Col>
-            <Col md={3}>
-              <h2 className="pt-2 pt-2">Latest Posts</h2>
-              <ul>
-                <li>
-                  <Link to="/"></Link>Lorem Ipsum
-                </li>
-                <li>
-                  <Link to="/"></Link>Lorem Ipsum
-                </li>
-                <li>
-                  <Link to="/"></Link>Lorem Ipsum
-                </li>
-                
-              </ul>
-            </Col>
-            <Col md={3}>
-              <h2 className="pt-2 pb-2 text-center text-md-start">
-                Recent News
-              </h2>
-              <ul>
-                <li>
-                  <Link to="/"></Link>Lorem Ipsum
-                </li>
-                <li>
-                  <Link to="/"></Link>Lorem Ipsum
-                </li>
-                <li>
-                  <Link to="/"></Link>Lorem Ipsum
-                </li>
-                
-              </ul>
-            </Col>
           </Row>
           <div className="border-top border-light">
             <Row>
               <Col md={12}>
                 <p className="text-center text-light m-0 pt-2 pb-1">
-                  Copy Rights reserved by Creative Desgns. Developed by{" "}
-                  <Link to="http://shanthaswebz.com" target="_blank">
+                  Copy Rights reserved by Grademax Concrete. Developed by{" "}
+                  <Link to="https://logodesignerbangalore.com/" target="_blank">
                     LDCB.
                   </Link>
                 </p>

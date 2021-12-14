@@ -1,13 +1,12 @@
 import React from "react";
 import { Row, Form, Col, Container, Button } from "react-bootstrap";
-import UseForm from '../ContactFrom/UseForm';
-import Validation from '../ContactFrom/Validation';
-
+import UseForm from "../ContactFrom/UseForm";
+import Validation from "../ContactFrom/Validation";
 
 const Contact = () => {
+  const { handleChange, values, handleSubmit, errors, mailStatus } =
+    UseForm(Validation);
 
-  const { handleChange, values, handleSubmit, errors, mailStatus} = UseForm(Validation);
-    
   return (
     <div>
       <div id="about-us" className="bg-secondary">
@@ -30,9 +29,7 @@ const Contact = () => {
                 If you have any query or want to leave a comment about our
                 products & services, drop a message or fill the form below.
               </p>
-              <Form
-                onSubmit={handleSubmit}
-              >
+              <Form onSubmit={handleSubmit}>
                 <Row>
                   <Col md={6}>
                     <Form.Group className="pb-5">
@@ -44,7 +41,9 @@ const Contact = () => {
                         type="text"
                         placeholder="Name*"
                       />
-                      {errors.name && <small className="text-danger">{errors.name}</small>}
+                      {errors.name && (
+                        <small className="text-danger">{errors.name}</small>
+                      )}
                     </Form.Group>
                   </Col>
                   <Col md={6}>
@@ -56,7 +55,9 @@ const Contact = () => {
                         type="email"
                         placeholder="Email*"
                       />
-                      {errors.email && <small className="text-danger">{errors.email}</small>}
+                      {errors.email && (
+                        <small className="text-danger">{errors.email}</small>
+                      )}
                     </Form.Group>
                   </Col>
                 </Row>
@@ -70,7 +71,9 @@ const Contact = () => {
                         type="text"
                         placeholder="Phone*"
                       />
-                      {errors.phone && <small className="text-danger">{errors.phone}</small>}
+                      {errors.phone && (
+                        <small className="text-danger">{errors.phone}</small>
+                      )}
                     </Form.Group>
                   </Col>
                   <Col md={6}>
@@ -82,7 +85,9 @@ const Contact = () => {
                         type="text"
                         placeholder="Subject*"
                       />
-                      {errors.subject && <small className="text-danger">{errors.subject}</small>}
+                      {errors.subject && (
+                        <small className="text-danger">{errors.subject}</small>
+                      )}
                     </Form.Group>
                   </Col>
                 </Row>
@@ -100,7 +105,9 @@ const Contact = () => {
                         placeholder="Message*"
                         rows={8}
                       />
-                      {errors.message && <small className="text-danger">{errors.message}</small>}
+                      {errors.message && (
+                        <small className="text-danger">{errors.message}</small>
+                      )}
                     </Form.Group>
                   </Col>
                 </Row>
@@ -108,7 +115,9 @@ const Contact = () => {
                   <Col md={12}>
                     <div id="mail-status">
                       {mailStatus ? (
-                        <p className="alert alert-success p-3 text-center">{mailStatus} </p>
+                        <p className="alert alert-success p-3 text-center">
+                          {mailStatus}{" "}
+                        </p>
                       ) : null}
                     </div>
                     <div className="">
@@ -134,7 +143,6 @@ const Contact = () => {
                       <p className="lh-base">
                         10/199 Shivanahalli, Jakkur Main Road,
                         <br /> Yelahanka, Bengaluru-560064.
-                        
                       </p>
                     </Col>
                   </Row>
@@ -175,6 +183,14 @@ const Contact = () => {
             </Col>
           </Row>
         </Container>
+      </div>
+
+      <div id="map" className="pt-3 pt-md-5">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31085.57833583052!2d77.58155446609757!3d13.118353104422674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1856f737d2d5%3A0xbef78d20185d942f!2sYelahanka%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1639479046236!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+        ></iframe>
       </div>
     </div>
   );

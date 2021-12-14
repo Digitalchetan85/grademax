@@ -19,26 +19,26 @@ const Home = () => {
       imgURL: ServiceImage1,
       alt: "Concrete",
       description:
-        "Ready mixed refers to concrete that is batched for delivery from a central plant instead of being mixed on the job site.",
-      bntURL: "/services",
+        "Ready-mix concrete, or RMC, is concrete that has been manufactured in a batch plant according to specific mix designs. ",
+      bntURL: "/ready-mix-content",
     },
     {
       id: 2,
-      title: "Concrete",
+      title: "Types of Ready-Mix Concrete?",
       imgURL: ServiceImage2,
       alt: "Concrete",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      bntURL: "/services",
+        "Ready mix concrete comes in three types, with each type is determined by the specific mixture of ingredients.",
+      bntURL: "/ready-mix-content",
     },
     {
       id: 3,
-      title: "Concrete",
+      title: "Transit Mixed Concrete",
       imgURL: ServiceImage3,
       alt: "Concrete",
       description:
-        "Ready mixed refers to concrete that is batched for delivery from a central plant instead of being mixed on the job site.",
-      bntURL: "/services",
+        "Transit mixed concrete is also called dry-batched concrete. In this type of RMC, all of the basic ingredients (including water) are combined in the truck mixer.",
+      bntURL: "/ready-mix-content",
     },
   ];
   return (
@@ -53,19 +53,7 @@ const Home = () => {
                   Welcome to Grademax Concrete
                 </h2>
                 <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered the undoubtable
-                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-                  "de Finibus Bonorum et Malorum" (The Extremes of Good and
-                  Evil) by Cicero, written in 45 BC. This book is a treatise on
-                  the theory of ethics, very popular during the Renaissance. The
-                  first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                  comes from a line in section 1.10.32.
+                Concrete is a major consideration for most construction projects and with 9 main types of concrete available, finding the type that is right for your job is an important first step. At Al Manaratain, we have a number of concrete products available, including precast concrete, concrete blocks, and concrete pavers, as well as ready mix. We’ve already covered the advantages & disadvantages of precast concrete in Bahrain, but today we’re looking at the different types of ready mix concrete and their advantages.
                 </p>
                 <div className="text-center">
                   <Button

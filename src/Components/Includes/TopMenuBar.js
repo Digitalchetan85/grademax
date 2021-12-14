@@ -30,6 +30,9 @@ const TopMenuBar = () => {
                 <Nav.Link as={Link} to="/ready-mix-content">
                   READY MIX CONCRETE
                 </Nav.Link>
+                <Nav.Link as={Link} to="/pricing">
+                  PRICING
+                </Nav.Link>
                 <Nav.Link as={Link} to="/gallery">
                   GALLERY
                 </Nav.Link>
