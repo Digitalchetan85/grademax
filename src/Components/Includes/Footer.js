@@ -21,19 +21,19 @@ const Footer = () => {
                 <h2 className="pt-2 pb-2">Quick Links</h2>
                 <ul>
                   <li>
-                    <Link to="/">Latest Events</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/">Terms and conditions</Link>
+                    <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link to="/">Privacy Policy</Link>
+                    <Link to="/ready-mix-content">Ready Mix Content</Link>
                   </li>
                   <li>
-                    <Link to="/">Career</Link>
+                    <Link to="/gallery">Gallery</Link>
                   </li>
                   <li>
-                    <Link to="/">Contact Us</Link>
+                    <Link to="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>

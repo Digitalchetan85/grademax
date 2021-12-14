@@ -2,17 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Col, Container, Image, Row, Button } from "react-bootstrap";
 import { SRLWrapper } from "simple-react-lightbox";
 import Image1 from "../../Images/Gallery/image-1.png";
-import Image2 from "../../Images/Gallery/image-1.png";
-import Image3 from "../../Images/Gallery/image-1.png";
+import Image2 from "../../Images/Gallery/image-2.png";
+import Image3 from "../../Images/Gallery/image-3.png";
+import Image4 from "../../Images/Gallery/image-4.png";
 
 const Gallery = () => {
   const images = [
     { id: 1, imgName: Image1, alt: "", tag: "Interior-design" },
     { id: 2, imgName: Image2, alt: "", tag: "Interior-design" },
     { id: 3, imgName: Image3, alt: "", tag: "Interior-design" },
-    { id: 4, imgName: Image1, alt: "", tag: "Interior-design" },
-    { id: 5, imgName: Image2, alt: "", tag: "Interior-design" },
-    { id: 6, imgName: Image3, alt: "", tag: "Interior-design" },
+    { id: 4, imgName: Image4, alt: "", tag: "Interior-design" },
   ];
 
   const [tag, setTag] = useState("all");
@@ -40,15 +39,15 @@ const Gallery = () => {
       <div id="portfolio" className="pt-3 pb-3 pt-md-5 pb-md-5">
         <Container>
           <div className="p-2 text-center d-flex flex-row justify-content-center">
-            <div className="m-1">
+            {/* <div className="m-1">
               <TagButton name="all" handlesettag={setTag} />
-            </div>
-            <div className="m-1">
+            </div> */}
+            {/* <div className="m-1">
               <TagButton name="Interior-design" handlesettag={setTag} />
             </div>
             <div className="m-1">
               <TagButton name="Constructions" handlesettag={setTag} />
-            </div>
+            </div> */}
             {/* <div className="m-1">
               <TagButton name="three" handlesettag={setTag} />
             </div> */}

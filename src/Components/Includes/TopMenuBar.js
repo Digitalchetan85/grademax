@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar, Image, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../Images/logo.png";
 
@@ -20,25 +20,16 @@ const TopMenuBar = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ms-auto me-auto">
-                <Nav.Link as={Link} to="/">
+              <Nav className="ms-auto">
+                <Nav.Link as={Link} to="/grademax">
                   HOME
                 </Nav.Link>
                 <Nav.Link as={Link} to="/about">
                   ABOUT US
                 </Nav.Link>
-                <Nav.Link as={Link} to="/products">
-                  PRODUCTS
+                <Nav.Link as={Link} to="/ready-mix-content">
+                  READY MIX CONCRETE
                 </Nav.Link>
-                {/* <NavDropdown title="PRODUCTS" id="services">
-                  <NavDropdown.Item as={Link} to="/interior-design">
-                    MENU-1
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item as={Link} to="/constructions">
-                    MENU-2
-                  </NavDropdown.Item>
-                </NavDropdown> */}
                 <Nav.Link as={Link} to="/gallery">
                   GALLERY
                 </Nav.Link>

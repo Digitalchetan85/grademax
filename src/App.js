@@ -14,10 +14,10 @@ function App() {
       <Router>
         <TopMenuBar />
         <Routes>
-          <Route path="/" index element={<Home />}></Route>
+          <Route path="/grademax" index element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/products" element={<Products />}></Route>
+          <Route path="/ready-mix-content" element={<Products />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
         </Routes>
         <Footer />

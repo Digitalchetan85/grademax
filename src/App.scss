@@ -9,7 +9,7 @@ $theme-colors: (
   "info": #0dcaf0,
   "warning": #813588,
   "danger": #dc3545,
-  "light": #808080,
+  "light": #CECED0,
 );
 
 /* import bootstrap to set changes */
@@ -19,7 +19,7 @@ $primary-color: #f57b00;
 $secondary-color: #ffc800;
 $white-color: white;
 $black-color: #000;
-$tertiary-color: #808080;
+$tertiary-color: #CECED0;
 
 .SRLDownloadButton {
     display: none !important;
@@ -29,10 +29,10 @@ $tertiary-color: #808080;
   .nav-link {
       padding: 30px 40px;
       align-items: center;
-      color: $secondary-color;
+      color: $primary-color;
       font-weight: 600;
       &:hover {
-          color: $primary-color;
+          color: $secondary-color;
       }
   }
   .dropdown-item {
